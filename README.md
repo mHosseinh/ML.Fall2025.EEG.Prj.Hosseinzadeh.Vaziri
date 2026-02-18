@@ -37,7 +37,7 @@ The pipeline includes the following steps:
 
 ------------------------------------------------------------------------
 
-## 📂 ساختار پروژه
+## 📂 Project structure
 
 ``` text
 ├── MotorImagery_Classification_Pipeline.ipynb
@@ -47,29 +47,29 @@ The pipeline includes the following steps:
 
 ------------------------------------------------------------------------
 
-## ⚙️ نصب و اجرای پروژه
+## ⚙️Installation and running the project
 
-### 1️⃣ نصب وابستگی‌ها
+### 1️⃣ Installing dependencies
 
 ``` bash
 pip install numpy scipy scikit-learn matplotlib
 ```
 
-### 2️⃣ اجرای پایپلاین روی هر فایل
+### 2️⃣ Running the pipeline on each file
 
 ``` python
 out_a = run_pipeline("BCICIV_calib_ds1a.mat")
 out_c = run_pipeline("BCICIV_calib_ds1c.mat")
 ```
 
-### 3️⃣ رسم ROC
+### 3️⃣ Plotting ROCROC
 
 ``` python
 plot_roc(out_a["results"], "ROC – ds1a")
 plot_roc(out_c["results"], "ROC – ds1c")
 ```
 
-### 4️⃣ جدول مقایسه‌ای نتایج
+### 4️⃣Comparative results table
 
 ``` python
 df_results
@@ -77,21 +77,21 @@ df_results
 
 ------------------------------------------------------------------------
 
-## 🧩 توضیح مراحل
+## 🧩 Steps description
 
-### 🎛 1. فیلترگذاری باندپسی (۸--۳۰ Hz)
+### 🎛 11. Band-pass filtering (8--30 Hz)
 
 X_filtered(t) = Bandpass(X(t), 8--30 Hz)
 
-### 🧠 2. استخراج ویژگی با CSP
+### 🧠 22. Feature extraction with CSP
 
-W = argmax(W\^T C1 W / W\^T C2 W)
+W = argmax(W^T C1 W / W^T C2 W)
 
-ویژگی‌ها:
+Features:
 
-fi = log(var(Wi\^T X) / Σ var(Wj\^T X))
+fi = log(var(Wi^T X) / Σ var(Wj^T X))
 
-### 🤖 3. مدل‌های طبقه‌بندی
+### 🤖 3.Classification models
 
 #### 🔹 SVM-RBF
 
@@ -103,19 +103,19 @@ y = w\^T x + b
 
 #### 🔹 KNN
 
--   فاصله: Euclidean یا Cosine\
--   تعداد همسایه‌ها با Cross-Validation تنظیم می‌شود
+-  Distance: Euclidean or Cosine\
+-  Number of neighbors is tuned using Cross-Validation
 
 #### 🔹 Random Forest
 
--   چندین درخت تصمیم + Bagging\
--   پارامترهای مهم: تعداد درخت‌ها، اندازهٔ برگ‌ها
+-   Multiple decision trees + Bagging
+-   Important parameters: number of trees, leaf size
 
 ------------------------------------------------------------------------
 
-## 📊 نتایج نمونه (Pipeline)
+## 📊 Sample results (Pipeline)
 
-## 📊 نتایج نمونه (Pipeline)
+
 | Model          | Acc_ds1a | Acc_ds1c | MeanAcc |
 |----------------|----------|----------|---------|
 | SVM-RBF        | 0.76     | 0.84     | 0.80    |
