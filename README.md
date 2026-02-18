@@ -1,3 +1,5 @@
+<img src='https://micro.ce.sharif.edu/lib/tpl/writr/images/logo.svg' alt="SUT logo" width=500 height=300 align=center class="saturate">
+
 # Machine Learning course project, Fall 2025, EEG Project, Hosseinzadeh, Vaziri, 
 
 Group G45
