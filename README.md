@@ -123,7 +123,4 @@ y = w\^T x + b
 | KNN            | 0.76     | 0.82     | 0.79    |
 | Random Forest  | 0.74     | 0.82     | 0.78    |
 
-3 	Random Forest 	0.74 	0.82 	0.78
-
-
 
