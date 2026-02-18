@@ -1,31 +1,39 @@
-# ML.Fall2025.EEG.Prj.Hosseinzadeh.Vaziri
-پروژه درس یادگیری ماشین پاییز 1404
+# ML.Fall2025.EEG.Prj.Hosseinzadeh.VaziriMachine Learning course project, Fall 2025
 
+Group G45
 
-گروه G45
+Mohammad Hossein Hosseinzadeh - 403203557
 
-محمد حسین حسین زاده 403203557
-
-فرشاد وزیری - 403206179
+Farshad Vaziri - 403206179
 
 
 # 🧠 Motor Imagery EEG Classification Pipeline
 
 ### CSP + SVM/KNN/LDA/RF on BCI Competition IV Dataset 1
 
-این پروژه یک پایپلاین کامل برای **طبقه‌بندی سیگنال EEG مربوط به Motor
-Imagery** (تصور حرکت دست چپ/راست) ارائه می‌دهد.
+``` text
 
+This project provides a complete pipeline for classification of EEG signals related to Motor
+Imagery (imagined left/right hand movement).
 
-پایپلاین شامل مراحل زیر است:
+The pipeline includes the following steps:
 
--   بارگذاری و پیش‌پردازش سیگنال EEG
--   فیلترگذاری باندپسی (۸--۳۰ Hz)
--   استخراج ویژگی با **Common Spatial Patterns (CSP)**
--   آموزش مدل‌های طبقه‌بندی
--   ارزیابی با ROC، AUC، Accuracy، Precision، Recall، F1
--   اجرای پایپلاین روی هر دو فایل
--   نمایش نتایج در قالب جدول مقایسه‌ای
+    Loading and preprocessing EEG signals
+
+    Band-pass filtering (8--30 Hz)
+
+    Feature extraction using Common Spatial Patterns (CSP)
+
+    Training classification models
+
+    Evaluation with ROC, AUC, Accuracy, Precision, Recall, F1
+
+    Running the pipeline on both files
+
+    Displaying the results in a comparative table
+
+  
+```
 
 ------------------------------------------------------------------------
 
