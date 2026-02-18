@@ -116,7 +116,7 @@ y = w\^T x + b
 ## 📊 Sample results (Pipeline)
 
 
-| Model          | Acc_ds1a | Acc_ds1c | MeanAcc |
+| Model          | Accuracy_ds1a | Accuracy_ds1c | MeanAccuracy |
 |----------------|----------|----------|---------|
 | SVM-RBF        | 0.76     | 0.84     | 0.80    |
 | LDA            | 0.76     | 0.92     | 0.84    |
