@@ -50,22 +50,6 @@ The pipeline includes the following steps:
 └── README.md
 ```
 
-
-------------------------------------------------------------------------
-
-## 🧩 Steps description
-
-### 🎛 1. Band-pass filtering (8--30 Hz)
-
-### 🧠 2. Feature extraction with CSP
-
-### 🤖 3.Classification models
-
-#### 🔹 SVM-RBF
-#### 🔹 LDA
-#### 🔹 KNN
-#### 🔹 Random Forest
-
 ------------------------------------------------------------------------
 
 ## 📊 Sample compare results for 2 datasets
