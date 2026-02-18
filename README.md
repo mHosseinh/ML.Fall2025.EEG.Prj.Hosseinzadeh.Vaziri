@@ -1,4 +1,4 @@
-# ML.Fall2025.EEG.Prj, Hosseinzadeh, Vaziri, Machine Learning course project, Fall 2025
+# Machine Learning course project, Fall 2025, EEG Project, Hosseinzadeh, Vaziri, 
 
 Group G45
 
