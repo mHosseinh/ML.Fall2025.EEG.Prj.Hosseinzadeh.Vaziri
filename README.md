@@ -48,35 +48,6 @@ The pipeline includes the following steps:
 └── README.md
 ```
 
-------------------------------------------------------------------------
-
-## ⚙️Installation and running the project
-
-### 1️⃣ Installing dependencies
-
-``` bash
-pip install numpy scipy scikit-learn matplotlib
-```
-
-### 2️⃣ Running the pipeline on each file
-
-``` python
-out_a = run_pipeline("BCICIV_calib_ds1a.mat")
-out_c = run_pipeline("BCICIV_calib_ds1c.mat")
-```
-
-### 3️⃣ Plotting ROCROC
-
-``` python
-plot_roc(out_a["results"], "ROC – ds1a")
-plot_roc(out_c["results"], "ROC – ds1c")
-```
-
-### 4️⃣Comparative results table
-
-``` python
-df_results
-```
 
 ------------------------------------------------------------------------
 
@@ -121,9 +92,9 @@ y = w\^T x + b
 
 | Model          | Accuracy_ds1a | Accuracy_ds1c | MeanAccuracy |
 |----------------|----------|----------|---------|
-| SVM-RBF        | 0.76     | 0.84     | 0.80    |
-| LDA            | 0.76     | 0.92     | 0.84    |
-| KNN            | 0.76     | 0.82     | 0.79    |
-| Random Forest  | 0.74     | 0.82     | 0.78    |
+| SVM-RBF        | 0.92     | 0.82     | 0.87    |
+| LDA            | 0.90     | 0.84     | 0.87    |
+| KNN            | 0.96     | 0.80     | 0.88    |
+| Random Forest  | 0.90     | 0.86     | 0.88    |
 
 
