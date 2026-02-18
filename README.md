@@ -9,7 +9,7 @@ Farshad Vaziri - 403206179
 
 # 🧠 Motor Imagery EEG Classification Pipeline
 
-### CSP + SVM/KNN/LDA/RF on BCI Competition IV Dataset 1
+### CSP + SVM/KNN/LDA/RF on "BCI Competition IV Dataset 1"
 
 ``` text
 
@@ -53,41 +53,20 @@ The pipeline includes the following steps:
 
 ## 🧩 Steps description
 
-### 🎛 11. Band-pass filtering (8--30 Hz)
+### 🎛 1. Band-pass filtering (8--30 Hz)
 
-X_filtered(t) = Bandpass(X(t), 8--30 Hz)
-
-### 🧠 22. Feature extraction with CSP
-
-W = argmax(W^T C1 W / W^T C2 W)
-
-Features:
-
-fi = log(var(Wi^T X) / Σ var(Wj^T X))
+### 🧠 2. Feature extraction with CSP
 
 ### 🤖 3.Classification models
 
 #### 🔹 SVM-RBF
-
-K(xi, xj) = exp(-γ\|\|xi - xj\|\|²)
-
 #### 🔹 LDA
-
-y = w\^T x + b
-
 #### 🔹 KNN
-
--  Distance: Euclidean or Cosine\
--  Number of neighbors is tuned using Cross-Validation
-
 #### 🔹 Random Forest
-
--   Multiple decision trees + Bagging
--   Important parameters: number of trees, leaf size
 
 ------------------------------------------------------------------------
 
-## 📊 Sample results (Pipeline)
+## 📊 Sample compare results for 2 datasets
 
 
 | Model          | Accuracy_ds1a | Accuracy_ds1c | MeanAccuracy |
