@@ -41,7 +41,10 @@ The pipeline includes the following steps:
 
 ``` text
 ├── MotorImagery_Classification_Pipeline.ipynb
-│   
+│
+├── BCICIV_calib_ds1a.mat
+├── BCICIV_calib_ds1c.mat
+│
 └── README.md
 ```
 
