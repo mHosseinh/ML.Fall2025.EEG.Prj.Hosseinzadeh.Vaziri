@@ -107,10 +107,14 @@ y = w\^T x + b
 
 ## 📊 نتایج نمونه (Pipeline)
 
-   	Model 	Acc_ds1a 	Acc_ds1c 	MeanAcc
-0 	SVM-RBF 	0.76 	0.84 	0.80
-1 	LDA 	0.76 	0.92 	0.84
-2 	KNN 	0.76 	0.82 	0.79
+## 📊 نتایج نمونه (Pipeline)
+| Model          | Acc_ds1a | Acc_ds1c | MeanAcc |
+|----------------|----------|----------|---------|
+| SVM-RBF        | 0.76     | 0.84     | 0.80    |
+| LDA            | 0.76     | 0.92     | 0.84    |
+| KNN            | 0.76     | 0.82     | 0.79    |
+| Random Forest  | 0.74     | 0.82     | 0.78    |
+
 3 	Random Forest 	0.74 	0.82 	0.78
 
 
